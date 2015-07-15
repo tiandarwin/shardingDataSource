@@ -1,12 +1,13 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.darwin</groupId>
-  <artifactId>shardingDataSource</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>shardingDataSource</name>
-  <description>数据库分库中的动态数据源组件，可以实现读写分离、数据切片</description>
-  
-  <repositories>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.darwin</groupId>
+	<artifactId>shardingDataSource</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>shardingDataSource</name>
+	<description>数据库分库中的动态数据源组件，可以实现读写分离、数据切片</description>
+
+	<repositories>
 		<repository>
 			<id>com.springsource.repository.bundles.release</id>
 			<name>EBR Spring Release Repository</name>
@@ -29,18 +30,20 @@
 		</repository>
 	</distributionManagement>
 
-	<!-- Core utilities used by other modules. Define this if you use Spring 
-		Utility APIs (org.springframework.core.*/org.springframework.util.*) -->
 	<dependencies>
-	
-	
-		<!-- JDBC Data Access Library (depends on spring-core, spring-beans, spring-context, 
-			spring-tx) Define this if you use Spring's JdbcTemplate API (org.springframework.jdbc.*) -->
+
+		<dependency>
+			<groupId>org.darwin</groupId>
+			<artifactId>commons</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-jdbc</artifactId>
 			<version>${org.springframework.version}</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
