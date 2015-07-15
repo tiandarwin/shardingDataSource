@@ -4,7 +4,7 @@
  */
 package org.darwin.shardingDataSource.dataSource.rule.impl;
 
-import org.darwin.common.ThreadContext;
+import org.darwin.common.utils.ThreadContext;
 import org.darwin.shardingDataSource.dataSource.rule.ShardingRule;
 
 /**
