@@ -11,7 +11,7 @@ import java.util.List;
 
 import javax.sql.DataSource;
 
-import org.darwin.common.utils.ThreadContext;
+import org.darwin.common.ThreadContext;
 import org.darwin.shardingDataSource.dataSource.rule.SlaveSelector;
 import org.darwin.shardingDataSource.dataSource.rule.impl.ByOrderSelector;
 import org.darwin.shardingDataSource.dataSource.rule.impl.ByWeightSelector;
