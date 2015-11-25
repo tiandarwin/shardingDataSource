@@ -10,11 +10,11 @@ package org.darwin.shardingDataSource.dataSource;
  */
 public interface DataSourceConstants {
 
-	public final static String READ = "read";
-	public final static String WRITE = "write";
-	
-	/**
-	 * 数据库的操作类型
-	 */
-	public final static String DB_OPT_TYPE = "dbOperationType";
+  public final static String READ = "read";
+  public final static String WRITE = "write";
+
+  /**
+   * 数据库的操作类型
+   */
+  public final static String DB_OPT_TYPE = "dbOperationType";
 }

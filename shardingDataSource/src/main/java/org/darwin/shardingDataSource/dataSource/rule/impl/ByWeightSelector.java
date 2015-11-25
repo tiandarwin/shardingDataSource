@@ -15,7 +15,7 @@ public class ByWeightSelector implements SlaveSelector {
 
 	private ByWeightSelector() {
 	}
-
+	
 	public ByWeightSelector(int[] weights) {
 		this();
 		this.weights = weights;
